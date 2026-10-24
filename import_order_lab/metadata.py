@@ -1,0 +1,1 @@
+DESCRIPTION = {'fr': 'Reproduire les défauts Python qui dépendent de l’ordre des imports', 'en': 'Reproduce Python failures depending on import order', 'es': 'Reproducir fallos Python que dependen del orden de importación'}

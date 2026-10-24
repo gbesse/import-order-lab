@@ -1,0 +1,14 @@
+{
+  "assets_root": "fixtures",
+  "wheels": [
+    {
+      "file": "order_fixture-0.0.1-py3-none-any.whl",
+      "sha256": "9607e7facca958259b97d73597de115694c8ad7d668b9c8acc44d1c28cb2b89a"
+    }
+  ],
+  "modules": [
+    "order_fixture.alpha",
+    "order_fixture.beta"
+  ],
+  "target": "order_fixture.probe"
+}

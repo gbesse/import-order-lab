@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "import-order-lab"
+version = "0.1.0a1"
+description = "FR: Reproduire les défauts Python qui dépendent de l’ordre des imports | EN: Reproduce Python failures depending on import order | ES: Reproducir fallos Python que dependen del orden de importación"
+requires-python = ">=3.11"
+license = "MIT"
+
+[project.scripts]
+import-order-lab = "import_order_lab.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["import_order_lab*"]
