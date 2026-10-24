@@ -17,7 +17,7 @@ Installe des wheels locales de confiance, épinglées par SHA-256, dans un venv 
 
 ### Limites
 
-Exécute du code local de confiance : ce n’est pas un bac à sable de sécurité. Pas de réseau ni dépendances téléchargées ; environnement enfant minimal sans clés. Quatre modules maximum, résultats bornés et empreintes de sortie, pas preuve d’absence d’interactions globales.
+Exécute du code local de confiance : ce n’est pas un bac à sable de sécurité. Pas de réseau ni dépendances téléchargées ; environnement enfant minimal sans clés. Hôte POSIX, plafond de 1 Mo par flux et de 15 secondes par permutation. Quatre modules maximum, résultats bornés et empreintes de sortie, pas preuve d’absence d’interactions globales.
 
 ### Validation
 
@@ -40,7 +40,7 @@ Installs trusted local SHA-256-pinned wheels into a fresh venv, then runs each i
 
 ### Limits
 
-Executes trusted local code: this is not a security sandbox. No network or downloaded dependencies; minimal child environment without keys. At most four modules, bounded results and output hashes, not proof of no global interactions.
+Executes trusted local code: this is not a security sandbox. No network or downloaded dependencies; minimal child environment without keys. POSIX host,1 MB per output stream and15 seconds per permutation. At most four modules, bounded results and output hashes, not proof of no global interactions.
 
 ### Validation
 
@@ -63,7 +63,7 @@ Instala wheels locales de confianza fijadas por SHA-256 en venv nuevo y ejecuta 
 
 ### Límites
 
-Ejecuta código local de confianza: no es sandbox de seguridad. Sin red ni dependencias descargadas; entorno hijo mínimo sin claves. Máximo cuatro módulos, resultados acotados y resúmenes, sin prueba de ausencia de interacciones globales.
+Ejecuta código local de confianza: no es sandbox de seguridad. Sin red ni dependencias descargadas; entorno hijo mínimo sin claves. Host POSIX,1 MB por flujo y15 segundos por permutación. Máximo cuatro módulos, resultados acotados y resúmenes, sin prueba de ausencia de interacciones globales.
 
 ### Validación
 

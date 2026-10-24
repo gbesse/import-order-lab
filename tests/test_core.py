@@ -14,3 +14,11 @@ class Tests(unittest.TestCase):
   with self.assertRaises(ValueError):run(d)
   d=self.data();d['wheels'][0]['file']='../../elsewhere.whl'
   with self.assertRaises(ValueError):run(d)
+
+class OutputBounds(unittest.TestCase):
+ def test_real_child_output_limit_terminates_without_unbounded_capture(self):
+  from import_order_lab.core import bounded_process
+  import sys,os,tempfile
+  with tempfile.TemporaryDirectory()as tmp:
+   status,out,err,code=bounded_process([sys.executable,'-I','-c','import sys;sys.stdout.write("x"*2_000_000);sys.stdout.flush()'],tmp,{'PATH':os.defpath})
+  self.assertEqual(status,'output_limit');self.assertLessEqual(len(out),1_000_000)
